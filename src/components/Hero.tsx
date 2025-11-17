@@ -4,7 +4,10 @@ import { ArrowDown, Code, Database, Palette } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden bg-gradient-hero flex items-center justify-center">
+    <section
+      id="home"
+      className="min-h-screen relative overflow-hidden bg-gradient-hero flex items-center justify-center"
+    >
       {/* Floating 3D Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 animate-float">
@@ -44,8 +47,8 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-
-              {/* View My Work → Scrolls to Portfolio */}
+              
+              {/* View My Work */}
               <a href="#portfolio">
                 <Button
                   size="lg"
@@ -55,7 +58,7 @@ export const Hero = () => {
                 </Button>
               </a>
 
-              {/* Contact Me → Scrolls to Contact section */}
+              {/* Contact Me */}
               <a href="#contact">
                 <Button
                   variant="outline"
@@ -65,7 +68,6 @@ export const Hero = () => {
                   Contact Me
                 </Button>
               </a>
-
             </div>
           </div>
 
@@ -78,7 +80,6 @@ export const Hero = () => {
                 alt="Anubhav Goon - Data Analyst & UI/UX Designer"
                 className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 shadow-card"
               />
-              {/* Rotating ring */}
               <div className="absolute inset-0 rounded-full border-2 border-accent/30 animate-rotate-slow" />
             </div>
           </div>
