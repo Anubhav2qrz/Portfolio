@@ -10,16 +10,19 @@ export const Hero = () => {
         <div className="absolute top-20 left-10 animate-float">
           <Database className="w-12 h-12 text-primary opacity-30" />
         </div>
-        <div className="absolute top-32 right-20 animate-float" style={{ animationDelay: '1s' }}>
+        <div className="absolute top-32 right-20 animate-float" style={{ animationDelay: "1s" }}>
           <Code className="w-10 h-10 text-accent opacity-40" />
         </div>
-        <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: "2s" }}>
           <Palette className="w-14 h-14 text-primary-glow opacity-25" />
         </div>
-        
+
         {/* Glowing orbs */}
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <div
+          className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1.5s" }}
+        />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -29,29 +32,40 @@ export const Hero = () => {
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
               Anubhav Goon
             </h1>
+
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Aspiring <span className="text-primary font-semibold">Data Analyst</span> & 
-              Creative <span className="text-accent font-semibold">Web Developer & UI/UX Designer</span>
+              Aspiring <span className="text-primary font-semibold">Data Analyst</span> & Creative{" "}
+              <span className="text-accent font-semibold">Web Developer & UI/UX Designer</span>
             </p>
+
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
-              Transforming data into insights while designing intuitive digital experiences. 
-              Currently freelancing in webCurrently freelancing in web development and UI/UX design to bring ideas to life.
+              Transforming data into insights while designing intuitive digital experiences. Currently freelancing
+              in web development and UI/UX design to bring ideas to life.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
-              >
-                View My Work
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary/30 text-primary hover:bg-primary/10 hover:shadow-accent transition-all duration-300 text-lg px-8 py-6"
-              >
-                Contact Me
-              </Button>
+
+              {/* View My Work → Scrolls to Portfolio */}
+              <a href="#portfolio">
+                <Button
+                  size="lg"
+                  className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
+                >
+                  View My Work
+                </Button>
+              </a>
+
+              {/* Contact Me → Scrolls to Contact section */}
+              <a href="#contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary/30 text-primary hover:bg-primary/10 hover:shadow-accent transition-all duration-300 text-lg px-8 py-6"
+                >
+                  Contact Me
+                </Button>
+              </a>
+
             </div>
           </div>
 
