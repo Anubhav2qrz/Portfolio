@@ -16,7 +16,7 @@ export const About = () => {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate about transforming data into actionable insights while creating beautiful, 
+            Passionate about transforming data into actionable insights and creating beautiful, 
             user-centered digital experiences that make technology accessible to everyone.
           </p>
         </div>
@@ -32,7 +32,7 @@ export const About = () => {
             </div>
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium text-primary">B.Tech Computer Science Engineering</h4>
+                <h4 className="font-medium text-primary">B.Tech in Computer Science Engineering</h4>
                 <p className="text-sm text-muted-foreground">Specialization in Data Science</p>
                 <p className="text-sm text-muted-foreground mt-1">Currently Pursuing</p>
               </div>
@@ -40,7 +40,10 @@ export const About = () => {
           </Card>
 
           {/* Experience Card */}
-          <Card className="p-8 bg-gradient-card border border-border/50 backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <Card
+            className="p-8 bg-gradient-card border border-border/50 backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4">
                 <Briefcase className="w-6 h-6 text-accent" />
@@ -51,17 +54,24 @@ export const About = () => {
               <div>
                 <h4 className="font-medium text-accent">Data Analyst Intern</h4>
                 <p className="text-sm text-muted-foreground">Internshala</p>
-                <p className="text-sm text-muted-foreground mt-1">Since June 2024</p>
+                <p className="text-sm text-muted-foreground mt-1">June 2025 – August 2025</p>
               </div>
               <div>
                 <h4 className="font-medium text-accent">Freelance Designer</h4>
                 <p className="text-sm text-muted-foreground">Graphic Design & UI/UX</p>
               </div>
+              <div>
+                <h4 className="font-medium text-accent">Web Developer</h4>
+                <p className="text-sm text-muted-foreground">Professional & Freelance Projects</p>
+              </div>
             </div>
           </Card>
 
           {/* Personal Card */}
-          <Card className="p-8 bg-gradient-card border border-border/50 backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <Card
+            className="p-8 bg-gradient-card border border-border/50 backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in-up"
+            style={{ animationDelay: "0.4s" }}
+          >
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-primary-glow/10 rounded-lg flex items-center justify-center mr-4">
                 <User className="w-6 h-6 text-primary-glow" />
@@ -71,8 +81,8 @@ export const About = () => {
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground leading-relaxed">
                 I believe in the power of data to tell stories and design to bring those stories to life. 
-                When I'm not analyzing datasets or crafting interfaces, you'll find me exploring new 
-                technologies and design trends.
+                When I'm not analyzing datasets or crafting interfaces, I enjoy exploring new 
+                technologies, design trends, and creative problem-solving.
               </p>
             </div>
           </Card>
@@ -83,17 +93,19 @@ export const About = () => {
           <Card className="p-8 lg:p-12 bg-gradient-card border border-border/50 backdrop-blur-sm shadow-card">
             <div className="text-center">
               <h3 className="text-2xl font-semibold mb-6 text-card-foreground">My Journey</h3>
+
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm <span className="text-primary font-semibold">Anubhav Goon</span>, an aspiring Data Analyst 
-                currently doing an internship at <span className="text-accent font-semibold">Internshala</span> while 
-                freelancing in UI/UX design. I'm passionate about transforming complex data into meaningful insights 
-                and designing creative digital experiences that solve real-world problems.
+                I'm <span className="text-primary font-semibold">Anubhav Goon</span>, an aspiring Data 
+                Analyst and a freelance Web Developer & UI/UX Designer. I'm passionate about transforming 
+                complex data into meaningful insights and crafting digital experiences that are both 
+                functional and visually engaging.
               </p>
+
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently pursuing my B.Tech in Computer Science Engineering with a specialization in Data Science, 
-                I'm constantly learning and applying new technologies to bridge the gap between data analytics and 
-                user experience design. My goal is to create data-driven solutions that are not only powerful but 
-                also beautifully designed and user-friendly.
+                Currently pursuing my B.Tech in Computer Science Engineering with a specialization in 
+                Data Science, I constantly explore new technologies to bridge the gap between analytics 
+                and design. My goal is to create data-driven solutions that are powerful, intuitive, 
+                and accessible for real-world use.
               </p>
             </div>
           </Card>

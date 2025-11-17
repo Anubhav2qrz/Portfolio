@@ -1,24 +1,24 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  BarChart3, 
   Palette, 
   Smartphone, 
   TrendingUp, 
   Users, 
-  ArrowRight 
+  ArrowRight,
+  Code2
 } from "lucide-react";
 
 const services = [
   {
-    icon: BarChart3,
-    title: "Data Analysis & Visualization",
-    description: "Transform complex datasets into clear, actionable insights with interactive dashboards and compelling visualizations.",
+    icon: Code2,
+    title: "Web Development",
+    description: "Build fast, responsive, and modern web applications tailored for performance, scalability, and seamless user experience.",
     features: [
-      "Statistical Analysis",
-      "Data Cleaning & Processing",
-      "Interactive Dashboards",
-      "Report Generation"
+      "Responsive UI/UX Design",
+      "Full-Stack Web Development",
+      "API Integration",
+      "Performance Optimization"
     ],
     gradient: "from-primary to-primary-glow",
     delay: "0s"
@@ -54,12 +54,12 @@ const services = [
 export const Services = () => {
   return (
     <section id="services" className="py-20 bg-background relative">
+      
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 left-10 w-48 h-48 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         
-        {/* Floating service icons */}
         <div className="absolute top-20 left-1/4 animate-float opacity-5">
           <TrendingUp className="w-20 h-20 text-primary" />
         </div>
@@ -69,6 +69,7 @@ export const Services = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
             Services I Offer
@@ -80,7 +81,7 @@ export const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             return (
               <Card 
@@ -88,7 +89,8 @@ export const Services = () => {
                 className="group p-8 bg-gradient-card border border-border/50 backdrop-blur-sm hover:shadow-card transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
                 style={{ animationDelay: service.delay }}
               >
-                {/* Icon with gradient background */}
+                
+                {/* Icon */}
                 <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="w-8 h-8 text-background" />
                 </div>
@@ -103,22 +105,25 @@ export const Services = () => {
 
                 {/* Features list */}
                 <ul className="space-y-2 mb-8">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                  {service.features.map((feature, index) => (
+                    <li key={index} className="flex items-center text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                {/* CTA Button */}
-                <Button 
-                  variant="ghost" 
-                  className="w-full group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 border border-border/30 group-hover:border-primary/30"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                {/* Learn More → scrolls down */}
+                <a href="#services-details" className="block">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 border border-border/30 group-hover:border-primary/30"
+                  >
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </a>
+
               </Card>
             );
           })}
@@ -141,16 +146,21 @@ export const Services = () => {
               >
                 Start a Project
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary/30 text-primary hover:bg-primary/10 hover:shadow-accent transition-all duration-300"
-              >
-                View Portfolio
-              </Button>
+
+              {/* View Portfolio → scrolls down */}
+              <a href="#portfolio">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-primary/30 text-primary hover:bg-primary/10 hover:shadow-accent transition-all duration-300"
+                >
+                  View Portfolio
+                </Button>
+              </a>
             </div>
           </Card>
         </div>
+
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const technicalSkills = [
 const creativeSkills = [
   { name: "UI/UX Design", level: 85, category: "Design" },
   { name: "Graphic Design", level: 80, category: "Design" },
-  { name: "Wireframing & Prototyping", level: 75, category: "Design" },
+  { name: "Web Development", level: 85, category: "Design" },
   { name: "User Research", level: 70, category: "Research" },
 ];
 
